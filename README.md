@@ -21,13 +21,19 @@ Simple wrapper to gravatar API for [Silex][1].
 The only required parameter is the email adress. The rest have default values.
 
 Without paramaters:
+
 	{{ gravatar('jimmy.leger@gmail.com') }}
+
 Or:
+
 	{{ 'jimmy.leger@gmail.com'|gravatar }}
-	
+
 With parameters:
+
 	{{ gravatar('jimmy.leger@gmail.com', 96, 'g', 'retro', false) }}
+
 Or:
+
 	{{ 'jimmy.leger@gmail.com'|gravatar(96, 'g', 'retro', false) }}
 
 ## Credits
