@@ -18,8 +18,8 @@ class Extension implements ExtensionInterface
             return new GravatarApi($app['gravatar.options']);
         });
         
-		if (isset($app['twig'])) {
-			$app['twig']->addExtension(new GravatarExtension($app['gravatar.api']));
+        if (isset($app['twig'])) {
+            $app['twig']->addExtension(new GravatarExtension($app['gravatar.api']));
         }
     }
 }
