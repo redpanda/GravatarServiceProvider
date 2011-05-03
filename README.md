@@ -20,7 +20,7 @@ Simple wrapper to gravatar API for [Silex][1].
 
 The only required parameter is the email adress. The rest have default values.
 
-Without paramaters:
+Without parameters:
 
 	{{ gravatar('jimmy.leger@gmail.com') }}
 
@@ -44,7 +44,7 @@ Or:
 
 The GravatarExtension is licensed under the MIT license.
 
-## More informations
+## More information
 
 * [Gravatar documentation][3]
 
