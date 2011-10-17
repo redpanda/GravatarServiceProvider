@@ -1,8 +1,8 @@
 <?php
 
-namespace Redpanda\Gravatar\Twig\Extension;
+namespace Redpanda\Silex\Provider\Twig\Extension;
 
-use Redpanda\Gravatar\Api as GravatarApi;
+use Redpanda\Silex\Provider\Api as GravatarApi;
 
 /**
  * @author     Thibault Duplessis <thibault.duplessis@gmail.com>

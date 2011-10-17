@@ -1,0 +1,23 @@
+{
+    "name": "redpanda/gravatar-service-provider",
+    "type": "library",
+    "description": "A simple wrapper to gravatar API for Silex.",
+    "keywords": ["silex", "gravatar"],
+    "homepage": "https://github.com/redpanda/GravatarServiceProvider",
+    "version": "0.1.0",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jimmy Leger",
+            "email": "jimmy.leger@gmail.com"
+        }
+    ],
+    "require": {
+        "silex/silex": ">=1.0.0-dev"
+    },
+    "autoload": {
+        "psr0": {
+            "Redpanda": "src"
+        }
+    }
+}

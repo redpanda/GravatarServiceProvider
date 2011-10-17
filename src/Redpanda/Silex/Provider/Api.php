@@ -1,6 +1,6 @@
 <?php
 
-namespace Redpanda\Gravatar;
+namespace Redpanda\Silex\Provider;
 
 /**
  * @author     Thibault Duplessis <thibault.duplessis@gmail.com>

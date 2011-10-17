@@ -1,10 +1,14 @@
-# Redpanda GravatarExtension
+# GravatarServiceProvider
 
-Simple wrapper to gravatar API for [Silex][1].
+A simple wrapper to gravatar API for [Silex][1].
 
 ## Installation
 
-    $ git submodule add git://github.com/redpanda/silex-gravatar.git src/Redpanda/Gravatar
+    $ git submodule add git://github.com/redpanda/GravatarServiceProvider.git /path/to/vendor/service-provider/gravatar
+
+## Autoloader
+
+    $app['autoloader']->registerNamespace('Redpanda', /path/to/vendor/service-provider/gravatar/src');
 
 ## Registering
 

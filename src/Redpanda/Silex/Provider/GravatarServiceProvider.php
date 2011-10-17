@@ -1,14 +1,14 @@
 <?php
 
-namespace Redpanda\Gravatar;
+namespace Redpanda\Silex\Provider;
 
-use Redpanda\Gravatar\Twig\Extension\GravatarExtension;
-use Redpanda\Gravatar\Api as GravatarApi;
+use Redpanda\Silex\Provider\Twig\Extension\GravatarExtension;
+use Redpanda\Silex\Provider\Api as GravatarApi;
 
 use Silex\Application;
-use Silex\ExtensionInterface;
+use Silex\ServiceProviderInterface;
 
-class Extension implements ExtensionInterface
+class GravatarServiceProvider implements ServiceProviderInterface
 {
     public function register(Application $app)
     {	
@@ -19,7 +19,9 @@ class Extension implements ExtensionInterface
         });
         
         if (isset($app['twig'])) {
-            $app['twig']->addExtension(new GravatarExtension($app['gravatar.api']));
+            $app->before(function () use ($app) {
+                $app['twig']->addExtension(new GravatarExtension($app['gravatar.api']));
+            });
         }
     }
 }
