@@ -15,7 +15,7 @@ A simple wrapper to gravatar API for [Silex][1].
     $app->register(new Redpanda\Gravatar\Extension(), array(
         'gravatar.options' => array(
         	'size'    => 100,
-        	'rating   => 'g',
+        	'rating'  => 'g',
         	'default' => 'mm',
         )
     ));
